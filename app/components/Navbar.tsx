@@ -31,7 +31,7 @@ export default function Navbar() {
           {/* Logo Section */}
           <div className="flex items-center space-x-4">
             <NavLink to="/" className="flex items-center">
-              <img className="h-12" src="/logo-no-background.png" alt="Logo" />
+              <img className="sm:h-12 h-8 " src="/logo-no-background.png" alt="Logo" />
             </NavLink>
           </div>
 
