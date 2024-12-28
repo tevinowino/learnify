@@ -5,7 +5,15 @@ import Features from "~/components/Features";
 import StepsToGetStarted from "~/components/StepsToGetStarted";
 import Testimonials from "~/components/Testimonials";
 import WhyChooseUs from "~/components/WhyChooseUs";
+import { NavLink } from '@remix-run/react';
 
+
+//MetaData
+const meta = {
+  title: "Learnify | Home",
+  description: "Learnify - Your One-Stop Solution for Custom School Websites and LMS",
+  keywords: "web development, learning management system, school websites",
+};
 export default function Home() {
   const [isVisible, setIsVisible] = useState({
     hero: true,
@@ -62,10 +70,10 @@ export default function Home() {
             tailored to enhance learning experiences.
           </p>
           <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-            <button className="group bg-blue-500 hover:bg-blue-600 transition-all duration-300 text-white px-6 py-3 rounded-lg flex items-center justify-center shadow-md hover:shadow-xl transform hover:-translate-y-1">
-              Try for free
+            <NavLink to={'/contact-us'} className="group bg-blue-500 hover:bg-blue-600 transition-all duration-300 text-white px-6 py-3 rounded-lg flex items-center justify-center shadow-md hover:shadow-xl transform hover:-translate-y-1">
+              Get Started
               <ChevronRight className="ml-2 transform transition-transform duration-300 group-hover:translate-x-1" />
-            </button>
+            </NavLink>
             <a 
               href='#features'
               className="group text-gray-600 hover:text-gray-800 px-6 py-3 flex items-center justify-center transition-all duration-300 hover:scale-105"
