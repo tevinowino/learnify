@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ChevronRight, PlayCircle } from "lucide-react";
 import FAQSection from "~/components/FAQsection";
 import Features from "~/components/Features";
@@ -13,7 +13,7 @@ export default function Home() {
     whyChoose: false,
     steps: false,
     faq: false,
-    testimonials: false,
+    testimonials: true,
   });
 
 
@@ -95,7 +95,7 @@ export default function Home() {
       <section
         id="features"
         className={`
-          px-4 sm:px-8 py-12 md:py-20
+          mb-3
           transform transition-all duration-1000
           ${isVisible.features ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"}
         `}
@@ -106,29 +106,27 @@ export default function Home() {
       <section
         id="whyChoose"
         className={`
-          px-4 sm:px-8 py-12 md:py-20
+          mb-3
           transform transition-all duration-1000
           ${isVisible.whyChoose ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"}
         `}
       >
         <WhyChooseUs />
       </section>
-
       <section
         id="steps"
         className={`
-          px-4 sm:px-8 py-12 md:py-20
+          mb-3
           transform transition-all duration-1000
           ${isVisible.steps ? "scale-100 opacity-100" : "scale-95 opacity-0"}
         `}
       >
         <StepsToGetStarted />
       </section>
-
       <section
         id="faq"
         className={`
-          px-4 py-12 md:py-20
+          mb-3
           transform transition-all duration-1000
           ${isVisible.faq ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"}
         `}
@@ -139,7 +137,6 @@ export default function Home() {
       <section
         id="testimonials"
         className={`
-          px-4 py-12 md:py-20
           transform transition-all duration-1000
           ${isVisible.testimonials ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"}
         `}

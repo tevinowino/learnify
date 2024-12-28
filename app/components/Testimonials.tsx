@@ -49,7 +49,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="bg-gray-100 ">
+    <section className="">
       <div className="container mx-auto px-6 lg:px-20">
         <h2 className="text-4xl font-bold text-center mb-12">
           What Our Clients Say

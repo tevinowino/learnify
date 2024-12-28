@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Globe, BookOpen, Search, Database, ArrowRight, CheckCircle } from "lucide-react";
 
 const Features = () => {
@@ -63,7 +63,7 @@ const Features = () => {
   });
 
   return (
-    <section className="bg-gradient-to-r from-blue-400 to-blue-600 py-10 rounded-2xl">
+    <section className="bg-gradient-to-r from-blue-400 to-blue-600 py-10 rounded-2xl ">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 transform transition-all duration-500 hover:scale-105">
           <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
